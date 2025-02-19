@@ -1,0 +1,20 @@
+
+interface Testable {
+    void display();
+}
+
+abstract class AbsTest implements Testable {
+   
+}
+
+class TestDerived extends AbsTest {
+    @Override
+    public void display() {
+        System.out.println("Displaying from TestDerived class.");
+    }
+
+    public static void main(String[] args) {
+        TestDerived testDerived = new TestDerived();
+        testDerived.display(); 
+    }
+}
